@@ -1,13 +1,15 @@
 from flask import Flask, render_template, request
 import jsonify
 import requests
-import pickle
+import gzip,pickle,pickletools
 import numpy as np
 import sklearn
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+with gzip.open('model.pkl', 'rb') as f:
+    p = pickle.Unpickler(f)
+    model = p.load()
 @app.route('/',methods=['GET'])
 def Home():
     return render_template('index.html')
