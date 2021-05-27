@@ -1,1 +1,1 @@
-web: gunicorn app.ipnyb:model.pkl
+web: gunicorn app.ipnyb:index.html
