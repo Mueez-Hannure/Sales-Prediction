@@ -1,1 +1,1 @@
-web: gunicorn app.ipnyb:index.html
+web: gunicorn app:app
