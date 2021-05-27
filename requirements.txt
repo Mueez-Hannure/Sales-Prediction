@@ -17,3 +17,4 @@ threadpoolctl==2.1.0
 wincertstore==0.2
 gunicorn
 Flask
+jsonify
