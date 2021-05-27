@@ -18,3 +18,12 @@ wincertstore==0.2
 gunicorn
 Flask
 jsonify
+requests
+Werkzeug
+urllib3
+MarkupSafe
+Jinja2
+itsdangerous
+idna
+click
+chardet
